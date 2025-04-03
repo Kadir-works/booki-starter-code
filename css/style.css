@@ -112,7 +112,7 @@ form {
   }
   
   .filtre button:hover {
-    background-color: #DEEBFF; /* Léger effet au survol */
+    background-color:var(--filter-bg-color); /* Léger effet au survol */
   }
   
   /* Style pour l'icône dans les boutons */
@@ -218,18 +218,20 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
+    width: 100%;
   }
   
+  .hebergements-cards a {
+    width: 31%;
+  }
+
   /* Style des cartes */
   .hebergements-cards .card {
-    width: 240px;
+    /* width: 240px; */
     height: 208px;
     border-radius: 15px;
     overflow: hidden;
     background: white;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     text-decoration: none;
     display: flex;
@@ -237,7 +239,7 @@ a {
   }
   
   /* Image des cartes */
-  .card img {
+  .hebergements-cards img {
     width: 100%;
     height: 50%;
     object-fit: cover;
@@ -262,7 +264,7 @@ a {
   .card-subtitle {
     font-size: 14px;
     color: #555;
-    margin-bottom: 5px;
+    margin: 0px;
   }
   
   /* Étoiles */
@@ -330,8 +332,9 @@ a {
 /* Styles pour la section Activités */
 .activites-a-marseille {
     max-width: 1340px;
+    display: flex;
+    flex-direction: column;
     margin: 30px;
-
 
   }
   
@@ -345,7 +348,7 @@ a {
   .activites-a-marseille-card {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    flex-wrap: wrap;
   }
   
   /* Styles des articles (cartes) */
@@ -377,6 +380,40 @@ a {
     font-size: 18px;
     font-weight: bold;
   }  
+
+
+/* Styles du footer */
+footer {
+    background-color: #f3f3f3;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Style des blocs du footer */
+  .footer-block {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+  
+  /* Titres du footer */
+  .footer-block h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Liens du footer */
+  .footer-block a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .footer-block p {
+margin: 5px 0;
+
+  }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
