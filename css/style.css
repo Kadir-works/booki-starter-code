@@ -41,6 +41,7 @@ header a:hover {
 
     color: #0065FC;
     border-top: 1px solid #0065FC;
+    padding-top: 20px;
 }
 
 nav .link:hover {
@@ -67,6 +68,7 @@ form {
     display: flex;
     align-items: center;  /* Centre verticalement */
     justify-content: center;  /* Centre horizontalement */
+    color: black;
   }
   
   form input {
@@ -75,7 +77,8 @@ form {
     outline: none;
     font-size: 16px;
     width: 200px; /* Ajuste la largeur selon besoin */
-
+    font-weight: bold;
+    color: black;
   }
   
   form button {
@@ -85,6 +88,7 @@ form {
     cursor: pointer;
     font-size: 16px;
     height: 50px;
+    font-weight: bold;
   }
 
 /* Style pour la section des filtres */
@@ -219,10 +223,12 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    gap: 20px;
+
   }
   
   .hebergements-cards a {
-    width: 31%;
+    flex: 1;
   }
 
   /* Style des cartes */
@@ -349,11 +355,16 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
   }
+  .activites-a-marseille-card a {
+    flex: 1;
+  }
+
   
   /* Styles des articles (cartes) */
   .activites-a-marseille-card .card {
-    width: 295px;
+    width: 100%;
     height: 439px;
     border-radius: 15px;
     overflow: hidden;
