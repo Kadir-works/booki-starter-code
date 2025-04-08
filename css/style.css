@@ -83,12 +83,24 @@ form {
   
   form button {
     background-color: #007bff; /* Bleu */
-    color: #fff; /* Texte blanc */
+    color: #fff;
     border: none;
     cursor: pointer;
     font-size: 16px;
     height: 50px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 0 15px 15px 0;
+  }
+  
+  /* Style de l'icône dans le bouton */
+  .button-icon {
+    display: none; /* cachée par défaut */
+    background-color: #007bff; /* Bleu */
+
   }
 
 /* Style pour la section des filtres */
@@ -465,5 +477,70 @@ margin: 5px 0;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    body{
+        width: 767px;
+        /* display: flex; */
+    }
+    header{
+        flex-direction: column;
+    }
+    nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    }
+    nav a {
+        margin: 0;
+    }
+    .Trouvez-votre-hebergemen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rechercher{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+        justify-content: space-between
+    }
+    .button-text {
+        display: none;
+      }
+    
+      .button-icon {
+        display: inline;
+      }
+    
+      form button {
+        width: 50px;
+        padding: 0;
+      }
+
+      form button i::before {
+        color: white;
+        background: var(--main-color);
+        border-radius: 15px;
+      }
+
+      .button-icon{
+        background-color: white;
+      }
+
+      .filtre {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    .filtre button {
+        display: inline;
+        width: 50%;
+        
+    }
 }
